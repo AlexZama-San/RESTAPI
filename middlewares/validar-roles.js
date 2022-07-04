@@ -1,5 +1,6 @@
 const {response} = require('express');
 const esAdmin = (req, res = response, next) => {
+    console.log(req.usuario)
 
     if ( !req.usuario) {
         return res.status(500).json({
